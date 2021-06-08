@@ -1,0 +1,268 @@
+html, body {
+	scroll-behavior: smooth; 
+	font-family: sans-serif; 
+	background-image: url(images/beach.jpg);
+	background-size: cover;
+	background-position: cover cover;
+	margin: 0;
+	padding: 0;
+}
+
+a {text-decoration: none;}
+
+li {list-style-type: none;}
+
+/*-----------------------------------------------HEADER-------*/
+#logo {
+	width: 200px;
+	float: left;
+}
+
+#logo img {
+	width: 100%;
+	margin: 13px 0 0 50px;
+}
+
+header {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	box-shadow: 0 1px 3px rgba(0, 0, 55, 0.1);
+	z-index: 1;
+	backdrop-filter: blur(6px);
+}
+
+header nav {
+	float: right;
+	margin: 13px 50px 0 0;
+}
+
+nav ul li {
+	float: left;
+	margin-right: 20px;
+}
+
+nav ul li:hover {
+	padding-top: 5px;
+	opacity: 0.5;
+}
+
+nav ul li a {
+	font-size: 16px;
+}
+
+/*-----------------------------------------------MAIN-------*/
+
+h2 {
+	font-size: 25px;
+}
+
+p {
+	font-size: 15px;
+}
+
+.bernard {
+	font-size: 15px;
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.video_container {
+	padding-top: 120px;
+	width: 900px;
+	margin: 0 auto;
+}
+
+.video {
+	height: 200;
+	width: 600px;
+	display: block;
+	margin: 0 auto;
+}
+
+.article_container_top {
+	padding-top: 120px;
+	width: 900px;
+	align-content: center; 
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.article_container {
+	padding-top: 50px;
+	width: 900px;
+	align-content: center;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.article_container_bottom {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 900px;
+	align-content: center; 
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.img_left {
+	float: left;
+	margin-right: 10px;
+	width: 400px;
+}
+
+.img_right {
+	float: right;
+	margin-left: 10px;
+	width: 400px;
+}
+
+.right_text {
+	text-align: right;
+}
+
+.left_text {
+	text-align: left;
+}
+
+/*-----------------------------------------------FOOTER-------*/
+footer {
+	width: 100%;
+	height: 113px;
+	backdrop-filter: blur(6px);
+	text-align: center;
+}
+
+footer p {
+	padding-top: 10px;
+}
+
+.connect {
+	display: flex;
+	justify-content: center;
+	height: 60px;
+	padding-top: 20px;
+}
+
+.connectitem {
+	padding: 0px 50px;
+	height: 100%;
+}
+
+.connectitem img {
+	height: 100%;
+}
+
+@media only screen and  (max-width: 769px) {
+
+	/* Prev-Markup messed with media query. Didn't worked without !important -> reset */
+	*, html {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	/* Header */
+	#logo {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	#logo img {
+		width: 200px;
+	}
+
+	header {
+		height: 100px;	
+		width: 100%;
+	}
+
+	#nav {
+		width:300px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto !important;
+	}
+	
+	nav ul {
+		width: 300px;
+		margin: auto !important;
+	}
+
+	nav ul li {
+		display: inline;
+	}
+
+	nav ul li a {
+		padding: 0 10px !important;
+		margin: 0 auto !important;
+	}
+
+	/* Main */
+
+	.right_text, .left_text, .bernard, p {
+		text-align: center;
+ 	}
+
+ 	h2 {
+		font-size: 20px;
+	}
+
+	p, em, .bernard {
+		font-size: 14px;
+	}
+
+	.video_container {
+		padding-top: 120px !important;
+	}
+
+	.video, .bernard {
+		width: 320px;
+	}
+
+	.article_container_top {
+		padding-top: 120px !important;
+	}
+
+	.article_container_top, .article_container, .article_container_bottom, .video_container {
+		margin: 25px auto !important;
+		width: 320px;
+		overflow: hidden;
+	}
+
+	.img_left, .img_right {
+		width: 100%
+	}
+
+	/* Footer */
+
+	footer { 
+		height: 90px;
+	}
+
+	footer p {
+		padding-top: 10px !important;
+	}
+
+	.connect {
+		display: flex;
+		justify-content: center;
+		height: 40px;
+		padding-top: 20px !important;
+	}
+
+	.connectitem {
+		height: 100%;
+		padding: 0px 20px !important;
+	}
+
+	.connectitem img {
+		height: 100%;
+	}
+
+}
